@@ -9,7 +9,7 @@
     <div id="wrapper">
 	
 	<?php 
-		require "masthead.php";
+		require "header.php";
 		require "meny.php";
 	?>
 		
