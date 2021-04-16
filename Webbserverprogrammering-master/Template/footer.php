@@ -1,5 +1,3 @@
-<?php
-	<footer>
+<footer>
 		Webbplats för Teknikums blogg
 	</footer>
-?>
