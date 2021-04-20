@@ -11,9 +11,11 @@
 				require "header.php";
 				require "meny.php";
 			?>
-	
+			
 				<main> <!--Huvudinnehåll-->
-				Startsida för min blogg
+				
+				<p>Startsida för min blogg</p>
+			
 				</main>				
 			
 			

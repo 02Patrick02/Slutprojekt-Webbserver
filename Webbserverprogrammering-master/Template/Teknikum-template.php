@@ -17,8 +17,7 @@
 		<main> <!--Huvudinnehåll-->
 			<section id="content">
 				<h2>Teknikum</h2>
-				<p> </p>
-					
+				<p>Hej</p> 
 				
 			</section>
 		</div>

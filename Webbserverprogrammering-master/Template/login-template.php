@@ -1,3 +1,14 @@
+<?php
+$str="";
+if(isset($_GET['status'])){
+	if($_GET['status']==1){
+		$str="Felaktig användare";
+	}
+	elseif($_GET['status']==2){
+		$str="Felaktig lösenord";
+	}
+}
+?>
 <!DOCTYPE html>
 
 <html lang="sv">
@@ -26,7 +37,7 @@
             <input type="submit" value="Logga in">
             </p>
           </form>
-          <p class="create"><a href="createUser.php">Skapa användare</a></p>
+          <p class="create"><a href="createUser-template.php">Skapa användare</a></p>
 				</section>
 			</main>
 

@@ -5,7 +5,7 @@
      <title>Formulär om Teknikum</title>
 		 <link rel="stylesheet" href="css/stilmall.css">
 	</head>
-  <body id="sida3">
+  <body id="produkter">
     <div id="wrapper">
       
 	<?php 
@@ -16,21 +16,25 @@
 			<main> <!--Huvudinnehåll-->
 				<section id="content">
 					<h2>Formulär</h2>
-          
-            <figure><img src="bilder/apple.jpg" alt="Grönt surt">
-                <figcaption>Äpple 50
-  
-                </figcation>
-            </figure>
+		
+			<section>
+			<form action="login2.php" method="post">
+            <p><label for="user">Vad tycker du om bloggen?:</label>
+			</br>
+            <input type="text" id="user" name="username"></p>
+            <p><label for="pwd">Lösenord:</label>
+			</br>
+            <input type="text" id="pwd" name="password"></p>
+            <p>
+            <input type="submit" value="Skicka svar">
+            </p>
+			</form>
+				</section>
+			</main>
             
-			</section>
-				
-				
+				</section
 			</main>
 			
-			<aside id="aside">
-				   <p>News</p>
-			</aside>
 		</div>
 		<!--Egen fil -->
 		<?php 
