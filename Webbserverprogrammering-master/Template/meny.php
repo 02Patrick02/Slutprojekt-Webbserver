@@ -10,7 +10,7 @@ if(!isset($_SESSION['username']))
     <ul>
       <li><a href="index.php">Start</a></li>
       <li><a href="Teknikum.php">Om Teknikum</a></li>
-      <li><a href="Formulär.php">Formulär om Tkenikum</a></li>
+      <li><a href="Formulär.php">Formulär</a></li>
       <li><a href="login.php">Logga in</a></li>
     </ul>
   </nav>
@@ -26,7 +26,7 @@ else
     <ul>
       <li><a href="index.php">Start</a></li>
       <li><a href="Teknikum.php">Om Teknikum</a></li>
-      <li><a href="Formulär.php">Formulär om Teknikum</a></li>
+      <li><a href="Formulär.php">Formulär</a></li>
       <li><a href="admin.php">Admin</a></li>
     </ul>
   </nav>
@@ -40,7 +40,7 @@ NAV;
     <ul>
       <li><a href="index.php">Start</a></li>
 	  <li><a href="Teknikum.php">Om Teknikum</a></li>
-      <li><a href="Formulär.php">Formulär om Teknikum</a></li>
+      <li><a href="Formulär.php">Formulär</a></li>
       <li><a href="admin.php">Admin</a></li>
     </ul>
   </nav>

@@ -15,9 +15,9 @@
 			
 			<main> <!--Huvudinnehåll-->
 				<section id="content">
-					<h2>Formulär</h2>
+					<h2>Formulär om teknikum</h2>
 		
-			<section>
+				<section>
 			<form action="login2.php" method="post">
             <p><label for="user">Vad tycker du om bloggen?:</label>
 			</br>
