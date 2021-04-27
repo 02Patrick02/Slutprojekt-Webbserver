@@ -17,7 +17,7 @@
 		<main> <!--Huvudinnehåll-->
 			<section id="content">
 				<h2>Teknikum</h2>
-				<p>Hej</p> 
+				<p>På Teknikum tar eleverna steget in i framtiden redan från första skoldagen. Vi fokuserar på teknik som en del av lärandet, vilket kan ta sig uttryck i allt från utmanande experiment till verklighetsanpassade projektarbeten. Hos oss blir du helt enkelt väl förberedd för morgondagens utmaningar.</p> 
 				
 			</section>
 		</div>

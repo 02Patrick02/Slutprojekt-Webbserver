@@ -19,7 +19,7 @@
 		
 				<section>
 			<form action="login2.php" method="post">
-            <p><label for="user">Vad tycker du om bloggen?:</label>
+            <p><label for="user">Vad tycker du om bloggen?</label>
 			</br>
             <input type="text" id="user" name="username"></p>
             <p><label for="pwd">Lösenord:</label>

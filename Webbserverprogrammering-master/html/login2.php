@@ -20,21 +20,9 @@ $row=$result->fetch_assoc();
 
 if(!$row){
     header("Location:../html/login.php?status=1");
-  
+	echo "användare saknas";
 }
-else{
-   if(password_verify($password,$row['password'])){
-        session_start();
-        $_SESSION['username']=$username;
-        $_SESSION['status']=$row['status'];
-        header("Location:../html/admin.php");
-     echo "Användaren är inloggad";
-    }
-    else{
-       header("Location:../html/login.php?status=2");
-     echo "felaktigt lösenord";
-    }
-}
+
 
 
 echo $username;
