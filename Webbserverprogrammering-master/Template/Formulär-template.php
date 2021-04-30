@@ -18,7 +18,7 @@
 					<h2>Formulär om teknikum</h2>
 		
 				<section>
-			<form action="login2.php" method="post">
+			<form action="" method="post">
             <p><label for="user">Vad tycker du om bloggen?</label>
 			</br>
             <input type="text" id="user" name="username"></p>
@@ -31,7 +31,8 @@
 			</form>
 				</section>
 			</main>
-            
+						
+			
 				</section
 			</main>
 			

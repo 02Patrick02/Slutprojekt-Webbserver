@@ -39,7 +39,7 @@ NAV;
   <nav id="admin">
     <ul>
       <li><a href="index.php">Start</a></li>
-	  <li><a href="Teknikum.php">Om Teknikum</a></li>
+	  <li><a href="Teknikum.php">Inlägg</a></li>
       <li><a href="Formulär.php">Formulär</a></li>
       <li><a href="admin.php">Admin</a></li>
     </ul>

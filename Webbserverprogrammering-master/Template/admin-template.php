@@ -40,7 +40,7 @@
 					<?php
 					while($row=$result->fetch_assoc()){
 						echo "<tr><td>";
-						echo $row['firstname'];
+						echo $row['username'];
 						echo "</td><td>";
 					}
 					?>
