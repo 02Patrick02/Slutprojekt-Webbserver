@@ -93,10 +93,6 @@ nav a{
 	text-decoration: none;
 }
 
-#admin ul{
-	grid-template-columns:1fr 1fr 1fr 1fr;
-		
-}
 
 nav li{
 	display:grid;

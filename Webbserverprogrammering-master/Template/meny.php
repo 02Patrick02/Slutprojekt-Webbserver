@@ -10,7 +10,7 @@ if(!isset($_SESSION['username']))
     <ul>
       <li><a href="index.php">Start</a></li>
       <li><a href="Teknikum.php">Om Teknikum</a></li>
-      <li><a href="Formulär.php">Formulär</a></li>
+      <li><a href="login.php">Skapa inlägg</a></li>
       <li><a href="login.php">Logga in</a></li>
     </ul>
   </nav>
@@ -24,9 +24,9 @@ else
   echo<<<NAV
   <nav>
     <ul>
-      <li><a href="index.php">Start</a></li>
+      <li><a href="index.php">Inlägg</a></li>
       <li><a href="Teknikum.php">Om Teknikum</a></li>
-      <li><a href="Formulär.php">Formulär</a></li>
+      <li><a href="Formulär.php">Skapa inlägg</a></li>
       <li><a href="admin.php">Admin</a></li>
     </ul>
   </nav>
@@ -36,11 +36,11 @@ NAV;
   elseif($_SESSION['status']==2)
   {
   echo<<<NAV
-  <nav id="admin">
+  <nav>
     <ul>
-      <li><a href="index.php">Start</a></li>
-	  <li><a href="Teknikum.php">Inlägg</a></li>
-      <li><a href="Formulär.php">Formulär</a></li>
+      <li><a href="index.php">inlägg</a></li>
+	  <li><a href="Teknikum.php">Om Teknikum</a></li>
+      <li><a href="Formulär.php">Skapa inlägg</a></li>
       <li><a href="admin.php">Admin</a></li>
     </ul>
   </nav>

@@ -33,6 +33,9 @@
 					<thead>
 						<tr>
 							<th>Namn</th>
+							<th></th>
+							<th>Status</th>
+							
 						</tr>
 					</thead>
 					<tbody>
@@ -41,6 +44,9 @@
 					while($row=$result->fetch_assoc()){
 						echo "<tr><td>";
 						echo $row['username'];
+						echo "</td><td>";
+						echo "</td><td>";
+						echo $row['status'];
 						echo "</td><td>";
 					}
 					?>

@@ -27,6 +27,7 @@ if(isset($_GET['status'])){
 		
 			<main> <!--Huvudinnehåll-->
 			<section>
+			<h2>Logga in</h2>
             <p><?php echo $str; ?></p>
 			<form action="login2.php" method="post">
             <p><label for="user">Användarnamn:</label>

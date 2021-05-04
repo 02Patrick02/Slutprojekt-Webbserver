@@ -15,7 +15,7 @@
 			
 			<main> <!--Huvudinnehåll-->
 				<section id="content">
-					<h2>Formulär om teknikum</h2>
+					<h2>Skapa inlägg</h2>
 		
 				<section>
 			<form action="" method="post">
@@ -26,7 +26,7 @@
 			</br>
             <input type="text" id="pwd" name="password"></p>
             <p>
-            <input type="submit" value="Skicka svar">
+            <input type="submit" value="Skapa">
             </p>
 			</form>
 				</section>
