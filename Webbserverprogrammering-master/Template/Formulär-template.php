@@ -16,27 +16,20 @@
 			<main> <!--Huvudinnehåll-->
 				<section id="content">
 					<h2>Skapa inlägg</h2>
-		
-				<section>
-			<form action="" method="post">
-            <p><label for="user">Vad tycker du om bloggen?</label>
-			</br>
-            <input type="text" id="user" name="username"></p>
-            <p><label for="pwd">Lösenord:</label>
-			</br>
-            <input type="text" id="pwd" name="password"></p>
-            <p>
-            <input type="submit" value="Skapa">
-            </p>
-			</form>
+					
+					<form action="Formulär.php" method="post">
+					<p><label for="title">Titel</label>
+					<br>
+          		  	<input type="text" id="title" name="title"></p>
+            		<p><label for="text">text:</label>
+					<br>
+					<textarea rows="3" cols="30" id="text" name="text"></textarea></p>
+           			<p><input type="submit" value="Skapa">
+            		</p>
+					</form>
 				</section>
 			</main>
-						
-			
-				</section
-			</main>
-			
-		</div>
+
 		<!--Egen fil -->
 		<?php 
 			require "footer.php";
