@@ -1,6 +1,6 @@
 <?php
 $str="";
-	if(isset($_POST['text']))
+	if(isset($_POST['text'])) // skapar inlägg
 	{
 		$description = filter_input(INPUT_POST,'text', FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_LOW);
 		$title = filter_input(INPUT_POST,'title', FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_LOW);
@@ -54,7 +54,7 @@ FORM;
 				<section id="content">
 					<h2>Skapa inlägg</h2>
 					<?php 
-						echo $str;
+						echo $str; //skriver ut strängen
 					?>
 					
 				</section>

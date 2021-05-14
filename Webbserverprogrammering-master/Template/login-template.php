@@ -1,6 +1,6 @@
 <?php
 $str="";
-if(isset($_GET['status'])){
+if(isset($_GET['status'])){ // beroende på vilket fel man har så skrivs str ut
 	if($_GET['status']==1){
 		$str="Felaktig användare";
 	}

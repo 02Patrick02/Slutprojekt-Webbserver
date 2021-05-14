@@ -1,3 +1,7 @@
-<footer>
-		Webbplats för Teknikums blogg
-	</footer>
+<?php
+
+?>
+
+<footer> 
+	Webbplats för Teknikums blogg
+</footer>

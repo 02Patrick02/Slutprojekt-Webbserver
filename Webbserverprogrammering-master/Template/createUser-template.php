@@ -2,16 +2,16 @@
 $str="";
 if(isset($_GET['name'])){
 			$username=$_GET['name'];
-			$str="Användarnamnet $username är upptaget";
+			$str="Användarnamnet $username är upptaget"; //kollar om användarnamned är upptaget
 		}
 		
 elseif(isset($_GET['mail']))
 	{
 			$mail=$_GET['mail'];
-			$str="Mailadressen $mail är upptagen";
+			$str="Mailadressen $mail är upptagen"; //kollar om mailen är upptagen
 	}
 	
-	if(isset($_POST['username']) &&isset($_POST['mail']) && isset($_POST['password']))
+	if(isset($_POST['username']) &&isset($_POST['mail']) && isset($_POST['password'])) //kollar så att de är tillgänglig och filtrerar de
 	{
 		$username = filter_input(INPUT_POST,'username', FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_LOW);
 		$mail = filter_input(INPUT_POST,'mail', FILTER_SANITIZE_EMAIL, FILTER_FLAG_STRIP_LOW);
@@ -22,7 +22,7 @@ elseif(isset($_GET['mail']))
 		$sql="SELECT * FROM users WHERE username = ? OR email = ?";
 		$res=$dbh->prepare($sql);
 		$res->bind_param("ss", $username, $mail);
-		$res->execute();
+		$res->execute(); // utför frågan
 		$result=$res->get_result();
 		$row=$result->fetch_assoc();
 
@@ -39,15 +39,15 @@ elseif(isset($_GET['mail']))
 		}
 
 		
-		else
+		else //skapar en användare som har status 1
 		{
 			$status = 1;
 			$sql = "INSERT INTO users(username, email, password, status) VALUE (?,?,?,?)";
 			$res=$dbh->prepare($sql);
-			$res->bind_param("sssi",$username, $mail, $password, $status);
+			$res->bind_param("sssi",$username, $mail, $password, $status); //binder parametern till frågan
 			$res->execute();
 			
-			$str="Användaren tillagd";
+			$str="Användaren tillagd"; //skriver ut användaren tillagd
 		}
 	}
 	else

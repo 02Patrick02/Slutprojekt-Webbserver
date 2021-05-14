@@ -4,10 +4,10 @@
 	$username=$_SESSION['username'];
 	
 	$sql = "SELECT * FROM users WHERE username = ?";	
-	$res=$dbh->prepare($sql);
+	$res=$dbh->prepare($sql); //förbereder en fråga
 	$res->bind_param("s", $username);
 	$res->execute();
-	$result=$res->get_result();
+	$result=$res->get_result(); //resultat från frågan
 ?>
 
 <!DOCTYPE html>
