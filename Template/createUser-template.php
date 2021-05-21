@@ -16,6 +16,7 @@ elseif(isset($_GET['mail']))
 		$username = filter_input(INPUT_POST,'username', FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_LOW);
 		$mail = filter_input(INPUT_POST,'mail', FILTER_SANITIZE_EMAIL, FILTER_FLAG_STRIP_LOW);
 		$password = filter_input(INPUT_POST,'password', FILTER_SANITIZE_EMAIL, FILTER_FLAG_STRIP_LOW);
+		$password = password_hash($password, PASSWORD_DEFAULT);
 
 		require "../include/connect.php";
 
