@@ -1,3 +1,10 @@
+<?php
+		require "../include/connect.php";
+		$sql = "SELECT * FROM posts"; //väljer och tar från databasen
+		$res=$dbh->prepare($sql);
+		$res->execute();		
+		$result=$res->get_result();
+?>
 <!DOCTYPE html>
 <html lang="sv">
   <head>
@@ -20,12 +27,6 @@
 				<p>Startsida för min blogg</p>
 
 				<?php
-					require "../include/connect.php";
-					$sql = "SELECT * FROM posts"; //väljer och tar från databasen
-					$res=$dbh->prepare($sql);
-					$res->execute();
-					
-					$result=$res->get_result();
 					while($row=$result->fetch_assoc()){
 						echo <<<ARTICLE
 						<article>
